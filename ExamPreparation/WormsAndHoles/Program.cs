@@ -4,8 +4,14 @@
     {
         static void Main(string[] args)
         {
-            List<int> worms = Console.ReadLine().Split().Select(int.Parse).ToList();
-            List<int> holes = Console.ReadLine().Split().Select(int.Parse).ToList();
+            List<int> worms = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToList();
+            List<int> holes = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToList();
             int matches = 0;
 
             for (int i = worms.Count - 1; i >= 0; i--)
